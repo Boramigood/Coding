@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      /* Content, Padding, Margin, Border */
+
+      div.content {
+        background-color: #808080;
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border: 10px solid green;
+        margin: 40px;
+      }
+
+      span {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+      }
+
+      div.padding {
+        border: 1px solid black;
+        padding: 89px 100px;
+        /* 그냥 padding이라고 하니까 상하좌우 다 된 모습 */
+      }
+
+      div.margin {
+        border: 1px solid red;
+        margin: 200px 100px;
+
+
+        /* 마진 세로 중첩시, 큰 마진 따라감 */
+    </style>
+  </head>
+  <body>
+    <div class="content"></div>
+
+    <span>HELLO</span>
+
+    <div class="padding">
+      slslrjslslrjslrjslrjsls lslslrjslslrjslrjslrjsl slslslrjslslrjslrjslrjs
+      lslslslrjslslrjslrjslrj slslslslrjslslrjslrjslrj slslslslrjslslrjslrjslrj
+      slslslslrjslslrjslrjslr jslslslslrjslslrjslrjslrjs
+      lslslslrjslslrjslrjslrjsl slslslrjslslrjslrjslrjslsl
+      slslrjslslrjslrjslrjslsls lslrjslslrjslrjslrjslslsl
+      slrjslslrjslrjslrjslslsls lrjslslrjslrjslrjslslslsl
+      rjslslrjslrjslrjslslsls lrjslslrjslrjslrjslslslsl
+      rjslslrjslrjslrjslslslslrjsls
+    </div>
+
+    <div class="margin">
+      slslrjslslrjslrjslrjsls lslslrjslslrjslrjslrjsl slslslrjslslrjslrjslrjs
+      lslslslrjslslrjslrjslrj slslslslrjslslrjslrjslrj slslslslrjslslrjslrjslrj
+      slslslslrjslslrjslrjslr jslslslslrjslslrjslrjslrjs
+      lslslslrjslslrjslrjslrjsl slslslrjslslrjslrjslrjslsl
+      slslrjslslrjslrjslrjslsls lslrjslslrjslrjslrjslslsl
+      slrjslslrjslrjslrjslslsls lrjslslrjslrjslrjslslslsl
+      rjslslrjslrjslrjslslsls lrjslslrjslrjslrjslslslsl
+      rjslslrjslrjslrjslslslslrjsls
+    </div>
+  </body>
+</html>
