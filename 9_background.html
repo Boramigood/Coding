@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background-color</title>
+
+    <style>
+      .red {
+        background-color: red;
+        width: 120px;
+        height: 120px;
+      }
+
+      .image {
+        background-position: top right;
+        background-repeat: repeat;
+        background-image: url('../asset/floral.jpg');
+        width: 200px;
+        height: 400px;
+        border: 1px solid black;
+        display: inline-block;
+        overflow: scroll;
+      }
+
+      .attachment-scroll {
+        background-attachment: scroll;
+      }
+
+      .attachment-fixed {
+        background-attachment: fixed;
+      }
+
+      .attachment-local {
+        background-attachment: local;
+      }
+      .background-size {
+        width: 600px;
+        height: 300px;
+        background-image: url(../asset/floaral2.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        border: 1px solid black;
+      }
+      .linear-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid red;
+        background: linear-gradient(
+          to right,
+          red 10%,
+          blue 40%,
+          yellow 50%,
+          pink 100%
+        );
+      }
+
+      .radial-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid blue;
+        background: radial-gradient(circle at 10% 50%, red, blue, yellow);
+      }
+    </style>
+  </head>
+  <body>
+    <h3>background-color</h3>
+    <div class="red"></div>
+
+    <h3>background-image</h3>
+    <div class="image attachment-scroll">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis hic
+      ratione officia aspernatur earum saepe repudiandae vero ad, tempora minus,
+      libero ea? Asperiores, nostrum hic? Debitis aliquam quis aperiam dolore?
+      Vitae, aperiam. Ipsa doloremque ipsum modi reprehenderit sequi aspernatur
+      cum distinctio, voluptate suscipit, esse labore id quam? Labore molestias
+      sed et aspernatur dolorem cum, saepe enim tempora nam a quis. At unde
+      expedita neque ut mollitia vitae esse tempora aperiam corporis. Quia modi
+      omnis assumenda debitis asperiores illum, vitae magnam fugit, quis saepe
+      non? Neque sint beatae aperiam quod voluptatibus! Esse accusamus dolore
+      sunt aperiam officia non fugit libero magnam maxime illo optio, veritatis
+      placeat ut earum et consequatur obcaecati sed saepe sit dolor dolorum amet
+      alias, ipsam vitae? Dolores. Labore at voluptates quasi in fugit, deleniti
+      ea deserunt repellat. Nostrum quas dignissimos fugiat laboriosam amet
+      numquam magnam molestiae, sit vel ad, sint dolor doloremque quis modi,
+      asperiores eveniet. Est. Cumque ipsum dolor doloremque provident?
+      Quibusdam facere modi harum ipsam molestiae dolores omnis magnam quia
+      doloremque accusantium iure nihil blanditiis autem ex fugit ratione fugiat
+      sed, culpa, alias molestias inventore. Ab ratione dicta eius.
+      Reprehenderit cupiditate pariatur, quibusdam eos hic dignissimos laborum
+      quisquam esse aliquam modi odio facilis debitis expedita obcaecati iusto
+      quod ducimus totam laudantium incidunt impedit quaerat rem! Perspiciatis
+      incidunt deleniti, quaerat id dolore, corrupti, iste facere odio
+      repellendus delectus magnam quibusdam similique cumque sit dicta tenetur!
+      Consectetur quo saepe nobis nisi accusantium ex eum ducimus, recusandae
+      obcaecati?
+    </div>
+    <div class="image attachment-fixed">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam non vel
+      eaque, fugiat accusamus ut error sed laboriosam officiis minus. Nostrum
+      dolores nemo debitis voluptatem aliquid incidunt expedita eveniet
+      blanditiis? Eius quisquam accusamus a necessitatibus autem aut eligendi
+      molestias nostrum sint, maxime eum. Saepe modi optio blanditiis
+      accusantium esse est, qui eaque laborum officia quo rerum dignissimos
+      voluptates possimus molestias! Earum voluptates doloremque quas sequi iure
+      fugit facilis ratione provident, exercitationem labore sunt aut laboriosam
+      error? Nemo, labore dolor. Nobis aperiam quos eos voluptate impedit
+      maiores debitis laborum delectus voluptates. Minus facilis atque maiores
+      laudantium eaque vitae temporibus esse eum dolore doloribus, quam
+      cupiditate sed! Culpa quos debitis quas adipisci deleniti modi! Deleniti,
+      incidunt cum reiciendis commodi delectus omnis sit? Cum voluptas quisquam
+      quos? Ipsum aliquam totam ducimus illum consectetur sunt labore saepe?
+      Natus perferendis cum ex qui! Aspernatur dolor tempore voluptates
+      molestias eius. Eligendi eaque consequuntur aperiam beatae explicabo. Iure
+      mollitia quidem veritatis aperiam, dignissimos similique, dolores quod rem
+      numquam voluptatem eius eligendi totam error saepe reprehenderit?
+      Molestias architecto odit molestiae placeat. Distinctio, natus. Doloremque
+      doloribus facere atque laudantium. Quibusdam cumque doloribus, perferendis
+      est sed repellat sequi in dignissimos quaerat, corrupti ducimus excepturi
+      cupiditate iure recusandae rem voluptatem eum! Officiis esse animi ut
+      quisquam, recusandae quis nostrum possimus eveniet? Numquam deleniti
+      sapiente nobis, suscipit consequatur debitis repudiandae mollitia labore
+      dolorem similique temporibus ipsum id deserunt? Error impedit sint,
+      delectus animi perspiciatis ipsum? Consequuntur nesciunt et in cum eius
+      maiores.
+    </div>
+    <div class="image attachment-local">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque libero
+      dolores voluptates? Porro in velit sed laborum vero, esse quo ea quod
+      beatae ipsum tempore nobis sint ipsam, et quibusdam. Ex amet cumque
+      officiis repudiandae consequatur, quos, culpa asperiores, eum fugit ipsam
+      similique. Modi nobis ducimus fugiat harum aspernatur dignissimos ullam
+      quibusdam recusandae vitae corporis. Aspernatur magnam exercitationem in
+      necessitatibus? Cumque sint aperiam beatae! Sint quos itaque odit
+      voluptates vel expedita accusantium consequatur repellendus? Alias, illo
+      aperiam? Quia vel praesentium blanditiis, sint exercitationem aspernatur
+      quod debitis asperiores temporibus ipsam perferendis! Ut totam amet
+      recusandae tempore consectetur eum, eaque suscipit, esse, assumenda magni
+      minima ullam. Nesciunt nihil in nostrum esse consectetur sapiente aliquid
+      possimus, nemo, omnis cupiditate tempore eos corporis perspiciatis. Atque
+      aliquid voluptate, veritatis animi ducimus deserunt natus perspiciatis
+      quis? Delectus suscipit inventore eligendi sunt eveniet autem sint animi
+      optio nisi eaque non necessitatibus quis, aliquam, possimus enim provident
+      repellat? Rerum architecto hic, commodi porro impedit sint maxime illum
+      aliquid atque aperiam laborum animi consectetur modi doloremque, ipsam
+      voluptatum nobis quas, voluptatibus incidunt sed. Illum cupiditate dicta
+      obcaecati adipisci commodi. Reprehenderit consequuntur alias distinctio
+      sint vero repudiandae sunt itaque incidunt obcaecati, asperiores dolore
+      praesentium sapiente dolorem, nemo reiciendis provident corrupti et quo,
+      ex laborum. Odit impedit officiis voluptatem sit culpa. Nihil dolore aut
+      error maxime quo quaerat tempore fugiat laborum! Itaque suscipit
+      doloremque magnam consequuntur? Vitae, temporibus? Quae, possimus aliquid?
+      Consequuntur, ipsa reiciendis possimus est voluptatibus a quisquam
+      deleniti laboriosam?
+    </div>
+
+    <h3>정연아 너에게 더 의지할게! 보고싶엉 어디야!! 언제와!</h3>
+    <div class="background-size"></div>
+
+    <h3>linear-gradient</h3>
+    <div class="linear-gradient"></div>
+
+    <h3>radial-gradient</h3>
+    <div class="radial-gradient"></div>
+
+    <div style="height: 1000px; width: 10px; background-color: red"></div>
+  </body>
+</html>
+
+<!-- div는 컨테이너(block), span은 특정아이템(inline) -->
