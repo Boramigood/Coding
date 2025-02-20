@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function checkAge(age) {
+        return age > 18 ? true : confirm('보호자의 동의를 받으셨나요?');
+      }
+
+      function checkAge(age) {
+        return age > 18 || confirm('보호자의 동의를 받으셨나요?');
+      }
+      // or은 첫번째 true를 찾으니까
+      // return은 함수에서 필수네
+    </script>
+  </body>
+</html>
