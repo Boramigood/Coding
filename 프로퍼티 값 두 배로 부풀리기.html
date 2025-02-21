@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function multiplyNumeric(menu) {
+        for (let key in menu) {
+          if (typeof menu[key] == number) {
+            menu[key] *= 2;
+          }
+        }
+      }
+
+      // 함수선언시 앞에 function 빠짐
+      // menu[key]안의 key에 어떻게 각 프로퍼티의 키를 넣을거지? for in 구문 사용
+    </script>
+  </body>
+</html>
