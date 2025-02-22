@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function pow(x, n) {
+        let result = x;
+        for (i = 1; i < n; i++) {
+          result *= x;
+        }
+        return result;
+      }
+
+      let x = prompt('x는?', '');
+      let n = prompt('n은?', '');
+      if (n < 1) {
+        alert(`${n}은 자연수입니다.`);
+      } else {
+        alert(pow(x, n));
+      }
+
+      // 함수는 return이 있어야 한다
+      // let 빼먹음, x,n을 물어보는거
+      // for 문에 let 없어야 함, for문 (){}괄호
+      // if n<1, alert에서 ``${n}
+    </script>
+  </body>
+</html>
