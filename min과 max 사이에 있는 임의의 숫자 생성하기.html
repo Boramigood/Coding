@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function random(min, max) {
+        return min + Math.random() * (max - min);
+      }
+
+      alert(random(5, 1));
+      alert(random(5, 1));
+      alert(random(5, 1));
+      alert(random(5, 1));
+
+      //Math.random()은 0~1사이 수 뱉음
+      //return에 min+는 최소값 설정(이하에 0근접시에도 1은 나오도록)
+      //1+(0~1사이의 수)*4 느낌
+    </script>
+  </body>
+</html>
