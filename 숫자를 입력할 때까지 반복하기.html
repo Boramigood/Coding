@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function readNumber() {
+        let num;
+
+        do {
+          num = +prompt('숫자를 입력하시오', '0');
+        } while (!isFinite(num));
+
+        if (num === null || num === '') {
+          return null;
+        }
+
+        return num;
+      }
+
+      alert(readNumber());
+
+      // do while은, while 뒤의 조건문이 true면 반복
+      // 숫자 넣으면 반복 중지되어야 함
+      // 한글 넣으면 반복되어야 함 =한글 넣으면 true되어야 함
+
+      //>return +num대신 +prompt가능?(O)
+    </script>
+  </body>
+</html>
