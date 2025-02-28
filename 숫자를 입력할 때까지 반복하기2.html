@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function readNumber() {
+        //true인 동안 반복함, 숫자 입력시 false되어야 함함
+
+        let num;
+
+        do {
+          num = prompt('should num', '0');
+        } while (!isFinite(num));
+        //한글이면 계속 물어보고, 숫자면 그만 물어봄
+        //isFinite자체에 인수를 숫자로 변환하는 기능있음
+
+        if (num === null || num === '') {
+          return null;
+        }
+        //한글, 숫자가 아닌 경우에는 null반환
+        return num;
+      }
+
+      alert(readNumber());
+    </script>
+  </body>
+</html>
