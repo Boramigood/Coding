@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function checkSpam(str) {
+        let changed = str.toLowerCase();
+
+        return changed.includes('viagra') || changed.includes('xxx');
+      }
+      //소문자로 바꾸고 작업하기, 일을 구분 가능한 단위로 최대한 쪼개
+      //if가 아니어도 논리 연산자(or,and)로 true,false를 반환할 수 있음
+
+      alert(checkSpam('buy ViAgRA now'));
+      alert(checkSpam('free xxxxx'));
+      alert(checkSpam('innocent rabbit'));
+    </script>
+  </body>
+</html>
