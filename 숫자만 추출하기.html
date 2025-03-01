@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function extractCurrencyValue(str) {
+        return +str.slice(1);
+      }
+      //예제처럼 %120만을 대상으로 할거면 +없어도 됨
+      //str.slice가 많이 쓰이고 문자열을 반환한다는 것을 알기
+      alert(extractCurrencyValue('$120'));
+    </script>
+  </body>
+</html>
