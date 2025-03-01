@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function truncate(str, maxlength) {
+        if (str.length > maxlength) {
+          return str.slice(0, maxlength - 1) + '…';
+          //str.slice는 부분만 가져옴. 첫인자~두번째인자 까지의
+          //maxlength는 상수라서 대괄호 필요없, 생각해보니까 필요가 없었음음
+        }
+        return str;
+      }
+
+      alert(truncate("What I'd like to tell on this topic is:", 20));
+      alert(truncate('Hi everyone!', 20));
+    </script>
+  </body>
+</html>
