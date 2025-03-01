@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function ucFirst(str) {
+        if (str == '') return str;
+
+        return str[0].toUpperCase() + str.slice(1);
+        //혼자서 이 위는 가능, str이 ""인 경우 [0]에서 error나는거 대비시
+      }
+
+      alert(ucFirst('john'));
+    </script>
+  </body>
+</html>
