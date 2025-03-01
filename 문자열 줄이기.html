@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function truncate(str, maxlength) {
+        //str이 선을 넘으면
+        if (str.length > maxlength) {
+          //str.slice는 str을 slice해서 반환함(인수는 범위)
+          return str.slice(0, [maxlength] - 1) + '…';
+        } else return str;
+      }
+
+      alert(truncate("What I'd like to tell on this topic is:", 20));
+    </script>
+  </body>
+</html>
