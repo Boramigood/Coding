@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let styles = [Jazz, Blues];
+
+      //배열 끝에 추가는 push
+      styles.push('Rock-n-Roll');
+
+      //정중앙 요소를 찾기, 그걸 Classic으로 바꾸기
+      styles[(styles.length - 1) / 2] = 'Classic';
+
+      alert(styles.shift());
+
+      styles.unshift('Rap', 'Reggae');
+    </script>
+  </body>
+</html>
