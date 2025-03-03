@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function sumInput() {
+        let bayoul = [];
+        let sum = 0;
+
+        while (true) {
+          let num = +prompt('숫자를 입력하시오', '');
+
+          //isFinite는 일반숫자 저격
+          if (!isFinite(num) || num == '' || num == null) {
+            break; //단순히 for문 탈출
+          }
+
+          //배열에 저장해야하니까 push
+          bayoul.push(num); //여까지는 반복문이지, 계속 push해야하니까
+        }
+
+        //이제 반복할 필요X, 배열 전부 완성됨
+        //for in,of 둘다 순회공연인데 배열은 of
+        for (let insu of bayoul) {
+          sum += insu;
+        }
+
+        return sum;
+      }
+
+      alert(sumInput());
+    </script>
+  </body>
+</html>

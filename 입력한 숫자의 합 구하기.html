@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function sumInput() {
+        let numbers = [];
+
+        do {
+          let a = prompt('숫자를 입력하시오', '');
+          numbers.push(+a);
+        } while (typeof a != 'number');
+        //여기까지 숫자배열 완성
+
+        let sum = 0;
+        for (let number of numbers) {
+          sum += number;
+        }
+        return sum;
+      }
+
+      alert(sumInput());
+
+      //do while은 쓰는 목적이 있을 때만 씀, 보통 while 씀
+    </script>
+  </body>
+</html>
