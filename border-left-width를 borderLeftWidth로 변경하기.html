@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function camelize(string) {
+        //-를 지우고 합치기(split, join)
+
+        return (
+          string
+            .split('-') //문자열을 배열로 만들었어(-기준)
+            .map((insu, index) =>
+              index == 0 ? insu : insu[0].toUpperCase() + insu.slice(1)
+            )
+            //map을 쓰는 이유: 배열의 각 인수에 함수 적용하여, 새로운 배열 만드려고고
+
+            .join('') //join한 것 까지 return 해줘야 함
+        );
+      }
+
+      alert(camelize('background-color'));
+    </script>
+  </body>
+</html>
