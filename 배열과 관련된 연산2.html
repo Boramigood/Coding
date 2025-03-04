@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let styles = ['Jazz', 'Blues'];
+
+      styles.push('Rock-n-Roll');
+
+      //배열 인자수가 짝수일 때 에러 안나게 대비하기 위해
+      //곱셈이 먼저니까 괄호를 쳤어야 함
+      styles[Math.floor(styles.length - 1) / 2] = 'Classics';
+      alert(styles.shift());
+      styles.unshift('Rap', 'Raggae');
+    </script>
+  </body>
+</html>
