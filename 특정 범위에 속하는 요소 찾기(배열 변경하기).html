@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function filterRangeInPlace(arr, a, b) {
+        //하고싶은 것: 범위내의 숫자를 제거 = splice
+
+        for (let i = 0; i < arr.length; i++) {
+          let val = arr[i];
+          if (val < a || val > b) {
+            //범위에 안맞으면 그 인자 빼고 i초기화해라(뺐으니까)
+            arr.splice(i, 1);
+            i--;
+          }
+        }
+      }
+
+      let arr = [5, 3, 8, 1];
+
+      filterRangeInPlace(arr, 1, 4); // 1과 4 사이에 있지 않은 요소는 모두 제거함
+
+      alert(arr); // [3, 1]
+    </script>
+  </body>
+</html>
