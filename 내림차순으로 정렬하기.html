@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [5, 2, 1, -10, 8];
+      //내림차순으로? = 큰 요소부터
+      //무조건 역순이여도 안됨, 정렬하는데 내가 원하는 함수로 하는거 뭐였지? sort
+
+      arr.sort(function (a, b) {
+        return b - a;
+      });
+
+      alert(arr);
+    </script>
+  </body>
+</html>
