@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let john = { name: 'John', age: 25 };
+      let pete = { name: 'Pete', age: 30 };
+      let mary = { name: 'Mary', age: 28 };
+
+      let users = [john, pete, mary];
+
+      //아니 그냥 단순하게 매핑만 하면 되잖아요;;
+      let names = users.map((person) => person.name);
+
+      alert(names); // John, Pete, Mary
+    </script>
+  </body>
+</html>
