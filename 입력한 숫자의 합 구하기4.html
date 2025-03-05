@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function sumInput() {
+        let numbers = [];
+
+        while (true) {
+          let num = prompt('숫자를 입력하시오.', '');
+
+          if (num === '' || num === null || !isFinite(num)) {
+            break; //while 반복문 빠져나가서 22번 줄로 감
+          }
+          numbers.push(+num); // +''랑 +0이 같으니까 여기서 + 붙히기
+        }
+        //배열 잘 만들었어
+        let sum = 0;
+
+        for (let num of numbers) {
+          sum += num;
+        }
+        return sum;
+      }
+    </script>
+  </body>
+</html>
