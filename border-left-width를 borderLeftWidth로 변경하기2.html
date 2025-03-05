@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function camelize(arr) {
+        return arr
+          .split('-')
+          .map((item, index) =>
+            index == 0 ? item : item[0].toUpperCase() + item.slice(1)
+          )
+          .join('');
+      }
+
+      alert(camelize('list-style-image'));
+    </script>
+  </body>
+</html>
+<!-- return쓰기, toUpperCase에 ()쓰기 -->
