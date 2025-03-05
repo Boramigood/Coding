@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function copySorted(arr) {
+        return arr.slice().sort();
+      }
+
+      //slice()에 인수가 없으면 복사본을 만들 수 있음
+      //매서드 체이닝 + 함수에는 return 요망(undefined로 캐치)
+
+      let arr = ['HTML', 'JavaScript', 'CSS'];
+
+      let sorted = copySorted(arr);
+
+      alert(sorted); // CSS, HTML, JavaScript
+      alert(arr); // HTML, JavaScript, CSS (no changes)
+    </script>
+  </body>
+</html>
