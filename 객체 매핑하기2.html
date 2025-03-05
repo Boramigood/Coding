@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let john = { name: 'John', surname: 'Smith', id: 1 };
+      let pete = { name: 'Pete', surname: 'Hunt', id: 2 };
+      let mary = { name: 'Mary', surname: 'Key', id: 3 };
+
+      let users = [john, pete, mary];
+      //배열요소 하나하나가 객체임임
+      let usersMapped = users.map((jpm) => ({
+        fullName: `${jpm.name} ${jpm.surname}`,
+        id: `${jpm.id}`,
+      }));
+      //jpm이 객체지, 그리고 객체를 객체로 변경하려는 거니까 객체에는 {}써줘야지
+      //화살표 함수에서 return값을 주려면 소괄호를 쳐야함
+
+      /*
+usersMapped = [
+  { fullName: "John Smith", id: 1 },
+  { fullName: "Pete Hunt", id: 2 },
+  { fullName: "Mary Key", id: 3 }
+]
+*/
+
+      alert(usersMapped[0].id); // 1
+      alert(usersMapped[0].fullName); // John Smith
+    </script>
+  </body>
+</html>
