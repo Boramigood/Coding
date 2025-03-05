@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //배열을 변경해야하니 map을 써볼까
+      function filterRangeInPlace(arr, a, b) {
+        for (i = 0; i < arr.length; i++) {
+          let val = arr[i];
+          if (val < a || val > b) {
+            arr.splice(i, 1); //splice가 반환없이 잘라내기만
+            i--;
+          }
+        }
+      }
+
+      let arr = [5, 3, 8, 1];
+
+      filterRangeInPlace(arr, 1, 4); // 1과 4 사이에 있지 않은 요소는 모두 제거함
+
+      alert(arr); // [3, 1]
+    </script>
+  </body>
+</html>
