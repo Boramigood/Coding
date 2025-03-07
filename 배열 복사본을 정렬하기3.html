@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function copySorted(arr) {
+        //정렬이면 sort일 것 같은데
+        //복사는 arr.slice()
+        return arr.slice().sort(function compareNumeric(a, b) {
+          if (a > b) return 1;
+          if (a == b) return 0;
+          if (a < b) return -1;
+        }); //오름차순(a부터) //왜 sort()로만 정렬이 될까???????????????????????????????? > 축약버전을 쓰면 문자열끼리는 뺄셈이 안되서 안먹힘
+      }
+
+      let arr = ['HTML', 'JavaScript', 'CSS'];
+
+      let sorted = copySorted(arr);
+
+      alert(sorted); // CSS, HTML, JavaScript
+      alert(arr); // HTML, JavaScript, CSS (no changes)
+    </script>
+  </body>
+</html>
