@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function camelize(arr) {
+        return arr
+          .split('-') // ['webkit', 'transition']
+          .map((arr, index) =>
+            index === 0 ? arr : arr[0].toUpperCase() + arr.slice(1)
+          )
+          .join('');
+      }
+
+      alert(camelize('-webkit-transition'));
+
+      //toUpperCase도 매서드라 ()괄호 필요함
+      //map의 index인수 받아야 []대괄호가 비로소 글자수를 의미하게 됨
+      //map =>뒤의 값만 return 하는거야 map은은
+    </script>
+  </body>
+</html>
