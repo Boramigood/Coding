@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function getAverageAge(users) {
+        //reduce는 실무에서도 쓰이니 해보자
+
+        return (
+          users.reduce((sum, current) => sum + current.age, 0) / users.length
+        );
+        //0이 없으면 배열의 첫번째 요소를 초깃값으로 사용하는데, arr배열의 초깃값은 john이라 오류 = 0써주기
+      }
+
+      let john = { name: 'John', age: 25 };
+      let pete = { name: 'Pete', age: 30 };
+      let mary = { name: 'Mary', age: 29 };
+
+      let arr = [john, pete, mary];
+
+      alert(getAverageAge(arr)); // (25 + 30 + 29) / 3 = 28
+    </script>
+  </body>
+</html>

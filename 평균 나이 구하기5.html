@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function getAverageAge(users) {
+        return (
+          users.reduce((sum, current) => sum + current.age, 0) / users.length //sum은 acummulator, current는 users, 즉 arr의 요소 하나하나를 의미하는 것을 따로 안써도 원래 그 자리라서 앎
+        );
+      }
+
+      let john = { name: 'John', age: 25 };
+      let pete = { name: 'Pete', age: 30 };
+      let mary = { name: 'Mary', age: 29 };
+
+      let arr = [john, pete, mary];
+
+      alert(getAverageAge(arr)); // (25 + 30 + 29) / 3 = 28
+    </script>
+  </body>
+</html>
