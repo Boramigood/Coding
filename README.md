@@ -41,4 +41,6 @@
 
 5.4, 5.5과제복습
 
-5.6reading, 5.7reading =>(순서) 5.5과제복습 
+5.6reading(Skipped)
+
+5.7reading =>(순서) 5.5과제복습
