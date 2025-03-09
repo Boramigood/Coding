@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function unique(arr) {
+        //사실 배열이 아니고 set이라면, 중복된 방문객을 제외하고 셀 수 있듯이 (배열에서 => set)으로 변경해주기만 하면 됨, 그리고 다시 배열로 바꿔주면 됨(set데이터 자체는 alert불가능)
+        return Array.from(new Set(arr));
+      }
+      let values = [
+        'Hare',
+        'Krishna',
+        'Hare',
+        'Krishna',
+        'Krishna',
+        'Krishna',
+        'Hare',
+        'Hare',
+        ':-O',
+      ];
+
+      alert(unique(values)); // 얼럿창엔 `Hare, Krishna, :-O`만 출력되어야 합니다.
+    </script>
+  </body>
+</html>
