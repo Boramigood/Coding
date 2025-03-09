@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function aclean(arr) {
+        let map = new Map(); //map을 만들었음(객체와 유사하지만 포용력이 높음)
+
+        for (let word of arr) {
+          // 단어를 글자 단위로 쪼갠 후, 알파벳 순으로 정렬한 다음에 다시 합칩니다.
+          let sorted = word.toLowerCase().split('').sort().join('');
+          //29번줄의 nap을 기준으로, word는 nap, sorted는 anp가 됨
+
+          map.set(sorted, word);
+          //map에는 anp를 키로 => nap저장
+          //33,34번 줄의 애너그램이 오면 중복키 문제가 발생???? aer => ear, aer=> era
+          //설마 중복키면 첫번째 설정한 것만 인정되는건가?
+          //ㄴㄴ,JS에서 map.set은 마지막 set만 인정됨
+        }
+
+        return Array.from(map.values); //new Map으로 만든 'map'을 '배열'로 변경하겠다는 의미 //뒤의 values는 (키 말고)'키에 대응하는 값'들을 순차적으로 나열
+      }
+
+      let arr = [
+        'nap',
+        'teachers',
+        'cheaters',
+        'PAN',
+        'ear',
+        'era',
+        'hectares',
+      ];
+
+      alert(aclean(arr)); // "nap,teachers,ear"나 "PAN,cheaters,era"이 출력되어야 합니다.
+    </script>
+  </body>
+</html>
