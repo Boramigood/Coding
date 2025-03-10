@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class User {
+        constructor(name) {
+          this.name = name; //user.name시 John, 이건 constructor라 자동
+        }
+
+        sayHi() {
+          alert(this.name); //sayHi함수 호출시 user.name(===John) 출력
+        }
+      }
+
+      // 사용법:
+      let user = new User('John');
+      user.sayHi();
+    </script>
+  </body>
+</html>
