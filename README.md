@@ -47,4 +47,4 @@
 
 5.7 완
 
-9.1
+9.1에서 class개념(=object 만들기 위한 기계장치) 습득 후 https://www.youtube.com/watch?v=Nx-NJcefgIg&list=PLI33CnBTx2MZGD7zAQ810_B8dDU_E8gaq&index=1 => 웹사이트 강좌로 넘어감
