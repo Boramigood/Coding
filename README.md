@@ -47,7 +47,7 @@
 
 5.7 완
 
-9.1에서 class개념(=object 만들기 위한 기계장치) 습득 후 https://www.youtube.com/watch?v=Nx-NJcefgIg&list=PLI33CnBTx2MZGD7zAQ810_B8dDU_E8gaq&index=1 => 웹사이트 강좌로 넘어감(2강들음)
+9.1에서 class개념(=object 만들기 위한 기계장치) 습득 후 https://www.youtube.com/watch?v=Nx-NJcefgIg&list=PLI33CnBTx2MZGD7zAQ810_B8dDU_E8gaq&index=1 => 웹사이트 강좌로 넘어감(2강들음).
 
 15까진 앉아있기만 해도 들으니까 오늘 15는 하자 뭘 해도 할 수는 있잖아 => 14까지 감
 
